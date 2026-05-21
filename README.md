@@ -1,8 +1,15 @@
-# HTML Hello
+# HTML + Tailwind CSS v4 (Local CLI)
 
-The most basic boilerplate for any 4Geeks Academy student, start your very first website from scratch.
+Starter project for building a website using only HTML and Tailwind CSS v4 with local compilation.
 
 > There is a video tutorial on [how to use this template to create your very first website here](https://youtu.be/dfbDCMu_p-0).
+
+## Project Rules
+
+- Use only HTML and Tailwind CSS.
+- Do not use React, Vue, Angular, Svelte, or any JS UI framework.
+- Use Tailwind CSS v4.
+- Do not use `cdn.tailwindcss.com` or `@tailwindcss/browser`.
 
 ## What to do next?
 
@@ -23,13 +30,25 @@ $ pip3 install flask && python3 server.py
 </head>
 ```
 
-- If you want to use Tailwind CSS, add it optionally via the official Tailwind CSS v4 CDN inside the same `<head>`:
+- Install dependencies and compile Tailwind locally:
+
+```bash
+npm install
+npm run build
+```
+
+- Use watch mode during development:
+
+```bash
+npm run dev
+```
+
+- Include the generated stylesheet in your HTML:
 
 ```html
 <head>
   ...
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="./src/output.css">
   ...
 </head>
 ```

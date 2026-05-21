@@ -1,0 +1,27 @@
+{
+  "name": "carlessa92-aie-pt2-dashboard-tailwind",
+  "version": "1.0.0",
+  "description": "Proyecto HTML con Tailwind CSS v4 (CLI local, sin CDN).",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch",
+    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --minify",
+    "serve": "python3 server.py"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/4GeeksAcademy/CarlesSA92-aie-pt2-Dashboard-Tailwind.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/4GeeksAcademy/CarlesSA92-aie-pt2-Dashboard-Tailwind/issues"
+  },
+  "homepage": "https://github.com/4GeeksAcademy/CarlesSA92-aie-pt2-Dashboard-Tailwind#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.0",
+    "tailwindcss": "^4.3.0"
+  }
+}

@@ -1,8 +1,15 @@
-# HTML Hello
+# HTML + Tailwind CSS v4 (CLI local)
 
-El boilerplate más básico para cualquier estudiante de 4Geeks Academy, empieza tu primer sitio web desde cero.
+Proyecto inicial para construir una web usando solo HTML y Tailwind CSS v4 con compilación local.
 
 > Tienes un video tutorial sobre [cómo usar esta plantilla para crear tu primer sitio web aquí](https://youtu.be/dfbDCMu_p-0).
+
+## Reglas del proyecto
+
+- Usa exclusivamente HTML y Tailwind CSS.
+- No uses React, Vue, Angular, Svelte ni frameworks de UI en JavaScript.
+- Usa Tailwind CSS v4.
+- No uses `cdn.tailwindcss.com` ni `@tailwindcss/browser`.
 
 ## ¿Qué hacer a continuación?
 
@@ -23,13 +30,25 @@ $ pip3 install flask && python3 server.py
 </head>
 ```
 
-- Si deseas usar Tailwind CSS, agrégalo de forma opcional mediante el CDN oficial de Tailwind CSS v4 dentro del mismo `<head>`:
+- Instala dependencias y compila Tailwind en local:
+
+```bash
+npm install
+npm run build
+```
+
+- Para desarrollo con recarga de estilos:
+
+```bash
+npm run dev
+```
+
+- Enlaza la hoja compilada en el HTML:
 
 ```html
 <head>
   ...
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="./src/output.css">
   ...
 </head>
 ```
